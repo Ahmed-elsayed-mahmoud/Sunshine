@@ -2,19 +2,34 @@
 
 ## Overview
 
-An android mobile application. The purpose of this project was to built an app, optimized for tablets, to help users discover popular and highly rated movies on the web. 
-It displays a scrolling grid of movie trailers, launches a details screen whenever a particular movie is selected, allows users to save favorites, play trailers, and read user reviews. 
-This app utilizes core Android user interface components and fetches movie information using themoviedb.org web API.
+An android mobile application. The purpose of this project was to built an app, optimized for tablets, to help users discover the daily weather. 
+It displays a list of forecasts for the weather of each day of the weak starting from today's weather. 
+This app utilizes core Android user interface components and fetches movie information using openweathermap.org web API.
 
-# Features
+# App Fundamentals
 
-* Sort movies by popularity and rating
-* View a particular movie detail.
-* View movie trailers, reviews.
-* Content provider for storing already viewed content this way app works offline.
-* glide library for image caching
+* RecyclerView, onClick implementation, LayoutManager
+* Threading and ASyncTask, JSON parsing
+* Intents, PlacePickerIntent (Google PlacePicker API)
+* Broadcast Intents and Broadcast Receivers
+* Content Provider, SQLite databases and JUnit tests
+* Supporting localization and variable screen sizes (Ukrainian language, tablet design)
+* Accessibility Features, Custom views (EditText)
+* Background services, SyncAdapters
+* Notification
 
 ## Prerequisites
+
+### [API Keys](http://openweathermap.org)
+You need OpenWeather and Google Maps API keys: 
+* OpenWeatherMap Key: <http://openweathermap.org/>
+* Google Maps Key (PlacePicker): <https://developers.google.com/places/android-api/placepicker>
+
+OpenWeather key you should add to the gradle.properties file:</br>
+MyOpenWeatherMapApiKey = "**YOUR API KEY**"
+
+Google Maps API key should be added to the api_key.xml in values folder as a string with name: youtube_api_key
+
 
 ### [Android Studio](https://developer.android.com/studio/index.html)
 
